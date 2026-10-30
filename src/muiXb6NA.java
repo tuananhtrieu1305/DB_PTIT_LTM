@@ -25,7 +25,7 @@ public class muiXb6NA {
             for(String x : input) {
                 x = x.trim();
                 if(x.endsWith(".edu")) {
-                    if(!sb.isEmpty()) {
+                    if(sb.length() == 0) {
                         sb.append(", ");
                     }
                     sb.append(x);

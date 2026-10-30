@@ -30,7 +30,7 @@ public class NmBafdCF {
                 set.add(Integer.parseInt(s));
             }
             StringBuilder res = new StringBuilder();
-            res.append(reqId).append(";").append(set.getLast()).append(",").append(set.getFirst());
+            res.append(reqId).append(";").append(set.last()).append(",").append(set.first());
             data = res.toString().getBytes();
             socket.send(new DatagramPacket(data, data.length, ip, port));
 
